@@ -1,0 +1,48 @@
+header{
+	background-color: black;
+	height:100px;
+}
+header p{
+	color:white;
+	font-weight: 400;
+	font-size: 40px;
+	
+}
+footer{
+	background-color: grey;
+	height:50px;
+}
+header li,footer li{
+	display:inline;
+}
+#middle{
+	height:700px;
+	background-color: purple;
+	text-align:center;
+	padding-top:300px;
+	font-size: 70px;
+   color:white;
+}
+
+#triangle{
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  margin-left: 900px;
+}
+a{
+	text-decoration:none;
+	padding-left: 200px;
+}
+#signIn{
+
+font-size:40px;
+display:none;
+}
+button{
+	display:block;
+	margin-left: 870px;
+	margin-top: 30px;
+}
