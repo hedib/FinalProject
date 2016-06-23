@@ -1,12 +1,32 @@
 header{
-	background-color: black;
+	background-color:#202020 ;
 	height:100px;
+    position: relative;
+    border-radius: 2px 2px 0 0;
 }
 header p{
 	color:white;
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 50px;
+    position: absolute;
+    left:2%;
+    top:20%;
+    text-shadow: 2px 2px grey;
 	
+}
+#sign{
+    width:100px;
+    height:30px;
+    background-color:#ffff80;
+    border-radius: 2px;
+    position:absolute;
+    top:34%;
+    left:90%;
+
+}
+#sign:hover{
+    background-color:lightgrey;
+    border:2px solid grey;
 }
 footer{
 	background-color: grey;
@@ -15,34 +35,471 @@ footer{
 header li,footer li{
 	display:inline;
 }
-#middle{
-	height:700px;
-	background-color: purple;
-	text-align:center;
-	padding-top:300px;
-	font-size: 70px;
-   color:white;
+.mySlides {
+    display:none;
+}
+#topSession {
+    display: block;
+    z-index: 99;
+    height:850px;
+    background-color: purple;
+
+}
+header, nav, section, article, aside, footer, hgroup {
+    display: block;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+/* arrow */
+#arrow{
+    width:10%;
+    height:250px;
+    float:left;
+    background: url(../image/arrow_left.png);
+    background-repeat: no-repeat;
+    margin-left: 10%;
+    padding:20px;
+}
+
+.quiz-text{
+    text-shadow: 2px 2px 2px #222;
+    display: inline-block;
+    padding: 20px;
+    color: #FFF;
+    font-family: Georgia, "Times New Roman", sans-serif;
+    font-size: 55px;
+}
+
+article span {
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    width: 100%;
+}
+.nav-item{
+
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0 auto;
+    color:black;
+    padding-left: 15px;
+}
+#cat{
+    /*background-image: url("../image/Rocks.png");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    padding:40px;
+    height:500px;
+}
+#cat p{
+    padding:20px;
+    font-size: 22px;
+    font-style: italic;
+    color:black;
+}
+#quiz{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    padding:40px;
+    height:450px;
+    text-align: right;
+    padding-right: 100px;
+}
+#quizContent{
+    position:absolute;
+    left:50%;
+    width:400px;
+    height:200px;
+    font-size: 22px;
+    color:black;
+    font-style: italic;
+}
+#share{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    padding:40px;
+    height: 250px;
+}
+.quiz-text article div {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.arrow-down {
+    right: 47%;
+    position: absolute;
+    bottom: -1;
+    top:80%;
+    display: block;
+    height: 62px;
+    width: 69px;
+    background: url(../image/arrow-down.png);
+    background-repeat: no-repeat;
+}
+
+a {
+    color: #328AA1;
+}
+#middleSession{
+display: block;
+    z-index: 99;
+    height:1690px;
+}
+#about{
+    height:250px;
+    background-color: lightgrey;
+
+}
+em{
+    font-size:55px;
+    text-shadow: 2px 2px grey;
+}
+.banner-guide {
+    padding: 0;
+    position: relative;
+    background-size: cover;
+    background: #D0D0D0 ; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #B0B0B0 , #989898 ,  #404040); /* Standard syntax (must be last) */
+     color:purple;
+     font-size:50px;
+ }
+  
+.animated{
+    float:left;
+    width:100px;
+    height:100px;
+    padding:20px;
+    margin:0px auto;
+    text-align: center;
+    background-color: purple;
+    border-radius: 50%;
+    position:relative;
+    font-size: 22px;
+    box-shadow: 10px 10px 5px #888888;
+    left:40%;
+
+    
+}
+#instruction1{
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  margin-right: 10px;
+
+}
+
+#instruction2{
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  margin-right: 10px;
+
+}
+
+#instruction3{
+  animation-duration: 4s;
+  animation-delay: 7s;
+  animation-iteration-count: infinite;
+  margin-right: 10px;
+
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 100px;}
+    to {left: 500px;}
+}
+
+@keyframes mymove {
+    from {left: 100px;}
+    to {left: 500px;}
+}
+/*#square{
+background-color: aqua
+}
 #triangle{
-  width: 0; 
+width: 0; 
   height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid white;
-  margin-left: 900px;
-}
-a{
-	text-decoration:none;
-	padding-left: 200px;
-}
-#signIn{
-
-font-size:40px;
-display:none;
-}
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  
+  border-bottom: 200px solid black;
+}*/
 button{
 	display:block;
-	margin-left: 870px;
-	margin-top: 30px;
+	padding: 5px;
+	margin-top: 20px;
+    
+}
+.card {
+    padding: 20px 16px;
+    box-sizing: border-box;
+    margin:20px;
+    transition: 2em;
+    margin-top: 64px;
+    height: 580px;
+    width: 512px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+    left:30%;
+    top:10%;
+
+}
+body{
+	background-color: #eee
+}
+.category-toolbar {
+    height: 100px;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    background-color: #00bad2;
+    color: #fff;
+    font-size: 24px;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+#category{
+	height:800px;
+background-color: purple;
+position:relative;
+
+}
+.cat{
+
+    float:left;
+    width:50%;
+    height:200px;
+    margin:0 auto;
+    transition: all .2s ease-in-out; 
+    border-radius: 10px
+}
+.cat:hover{
+transform: scale(1.1);
+
+}
+#cat1{
+    background-image: url("../image/history.jpg")
+}
+#cat2{
+ background-image: url("../image/art.jpg")
+}
+#cat3{
+ background-image: url("../image/science.jpg")
+}
+#cat4{
+     background-image: url("../image/tech.jpg")
+}
+#grid{
+	width:50%;
+	height:500px;
+    top:18.5%;
+    left:25%;
+    position:absolute;
+}
+.cat p{
+    font-size: 18px;
+    width:100px;
+    text-align: center;
+}
+aside{
+        background-color: black;
+    width:33.3%;
+    float:left;
+       color:white;
+    height:300px;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+    padding: 20px;
+    font-family: "RobotoDraft", sans-serif;
+    color: #444;
+    font-weight: 400;
+   align-items: center;
+}
+
+input {
+  font-size:16px;
+  width:50%;
+  display:block;
+  outline:none;
+  border-radius:5px;
+  border:3px solid #c6c9cc;
+  margin:5px 0px 15px 0px;
+  padding:5px 8px;
+  height:30px;
+}
+
+input:focus {
+  border:3px solid blue;
+}
+
+label {
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/*quiz*/
+
+h1 {
+    font-family:'Rokkitt', serif;
+    text-align: center;
+    padding: 30px;
+    font-size:28px;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-family:'Rokkitt', serif;
+    font-size: 2em;
+        padding:20px;
+}
+/*input[type=radio] {
+    border: 0px;
+    width: 20px;
+    height: 2em;
+    display:inline;
+}*/
+p {
+    font-family:'Rokkitt', serif;
+}
+/* Quiz Classes */
+ .quizContainer {
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    float:left;
+    margin: auto;
+    padding-top: 5px;
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+    position: relative;
+    transition: width 2s;
+    padding-top: 20px;
+}
+.nextButton {
+    box-shadow: 3px 3px 5px #888;
+    border-radius: 6px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: lightgrey;
+    /*clear: both;*/
+    color: red;
+    font-family:'Rokkitt', serif;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+}
+.question {
+    font-family:'Rokkitt', serif;
+    font-size: 2em;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 6px;
+    background-color: lightgrey;
+    text-align: center;
+}
+.quizMessage {
+    background-color: peachpuff;
+    border-radius: 6px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 2px;
+    font-family:'Rokkitt', serif;
+    color: red;
+}
+.choiceList {
+    font-family: Courier, serif;
+    color: blueviolet;
+}
+.result {
+    width: 30%;
+    height: auto;
+    border-radius: 6px;
+    background-color: linen;
+    margin: auto;
+    text-align: center;
+    font-family:'Rokkitt', serif;
+}
+.checkbox{
+    width:50%;
+}
+
+.checkbox li{
+    float:left;
+    width:15%;
+
+
+}
+.checkbox label{
+    font-size:18px;
+}
+#select-Edu{
+    margin-bottom: 60px;
+}
+
+input[type=radio]:checked + label:before{
+  content:"\2022";
+/*   background:green; */
+ 
+ /*  font-size:40px;*/
+  line-height:23px;
+}
+input[type=radio]{
+  width:100px;
+  display:none;
+}
+
+input[type=radio] + label:before{
+
+display:inline-block; /* allows us to set width & height how we want */
+  content:""; /* content we are adding to the DOM */
+  text-align:center;
+  color:#00bf00;
+ 
+  width:20px;
+  height:20px;
+  background:#ccc;
+  box-shadow: inset 0px 1px 3px rgba(0,0,0,.7);
+  border-radius:20px;
+}
+/* End of Quiz Classes */
+#share li{
+    display: inline;
+    width:300px;
+    height:200px;
+    font-size: 24px;
+    color:blue;
+    margin:0 auto;
+    position: relative;
+    left:39%;
+
 }
