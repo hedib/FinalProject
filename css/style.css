@@ -326,10 +326,12 @@ transform: scale(1.1);
 }
 aside{
         background-color: black;
-    width:33.3%;
+    width:50%;
     float:left;
        color:white;
-    height:300px;
+    height:200px;
+    position:relative;
+text-align: center;
 }
 form {
   width: 50%;
@@ -492,14 +494,50 @@ display:inline-block; /* allows us to set width & height how we want */
   border-radius:20px;
 }
 /* End of Quiz Classes */
-#share li{
-    display: inline;
+.scrollToTop{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 30px 30px 30px;
+border-color: transparent transparent lightgrey transparent;
+    color: white;
+    text-decoration: none;
+
+  /*  background: url('arrow_up.png') no-repeat 0px 20px;*/
+}
+.scrollToTop:hover{
+    background-color: smokewhite;
+}
+#end{
+position:relative;
+left:48%;
+}
+.bottom{
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.bottom li{
+    font-size: 16px;
+    line-height: 1px;
+}
+.banner-guide li{
+width:300px;
+text-align: center;
+ display: inline;
     width:300px;
     height:200px;
     font-size: 24px;
-    color:blue;
     margin:0 auto;
     position: relative;
     left:39%;
-
+    border-radius: 2px;
+}
+#facebook{
+    background-color: #3B5998;
+    color:white;
+    text-decoration:none;
+}
+#twitter{
+     background-color: #4099FF;
+    color:white;
 }
