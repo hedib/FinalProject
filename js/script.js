@@ -10,23 +10,24 @@ $(window).scroll(function(){
     
     //Click event to scroll to top
     $('.scrollToTop').click(function(){
+
         $('html, body').animate({scrollTop : 0},800);
         return false;
     });
-    var myIndex = 0; 
-carousel();
+//     var myIndex = 0; 
+// carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-   // x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
+// function carousel() {
+//     var i;
+//     var x = document.getElementsByClassName("mySlides");
+//     for (i = 0; i < x.length; i++) {
+//        x[i].style.display = "none";
+//     }
+//     myIndex++;
+//     if (myIndex > x.length) {myIndex = 1}
+//     x[myIndex-1].style.display = "block";
+//     setTimeout(carousel, 2000); // Change image every 2 seconds
+// }
   $('.nav-item').click(function(){
    window.location.href= 'logIn.html';
 });
@@ -37,7 +38,7 @@ function carousel() {
   	  $("#grid" ).load( "quiz.html" );
   }
 $(".arrow-down").click(function(){
-$("#topSession").slideToggle();
+$('html, body').animate({ scrollTop:  $("#topSession").offset().top - -800 }, 'slow');
 })
 
 var questions = [{
@@ -61,6 +62,32 @@ var questions = [{
     choices: ["Waterloo", "Baker Street", "Kings Cross", "Victoria"],
     correctAnswer: 3
 }];
+
+
+// var questions = [{
+//     question: "Which of the following characterized English society in the sixteenth century?",
+//     choices: ["a stagnant economy", "a rapidly growing population", "declining per capita output and real household income", "205 million"],
+//     correctAnswer: 1
+// }, {
+//     question: "What is 27*14?",
+//     choices: ["485", "634", "408", "528"],
+//     correctAnswer: 2
+// }, {
+//     question: "What is the busiest train station in the world?",
+//     choices: ["Grand Central, NY", "Shibuya, Tokyo", "Beijing Central, Chine", "Gard du Nord, Paris"],
+//     correctAnswer: 1
+// }, {
+//     question: "What is the longest river?",
+//     choices: ["Nile", "Amazon", "Mississippi", "Yangtze"],
+//     correctAnswer: 4
+// }, {
+//     question: "What is the busiest tube station in the London?",
+//     choices: ["Waterloo", "Baker Street", "Kings Cross", "Victoria"],
+//     correctAnswer: 3
+// }];
+
+
+
 
 var currentQuestion = 0;
 var correctAnswers = 0;

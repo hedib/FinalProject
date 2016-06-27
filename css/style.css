@@ -1,6 +1,6 @@
 header{
 	background-color:#202020 ;
-	height:100px;
+	height:75px;
     position: relative;
     border-radius: 2px 2px 0 0;
 }
@@ -15,19 +15,25 @@ header p{
 	
 }
 #sign{
-    width:100px;
-    height:30px;
-    background-color:#ffff80;
-    border-radius: 2px;
+ 
+   
     position:absolute;
     top:34%;
-    left:90%;
+    left:80%;
 
 }
-#sign:hover{
-    background-color:lightgrey;
-    border:2px solid grey;
+#sign a{
+    width:150px;
+    height:50px;
+    display: inline;
+     background-color:#ffff80;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+
 }
+
 footer{
 	background-color: grey;
 	height:50px;
@@ -35,14 +41,41 @@ footer{
 header li,footer li{
 	display:inline;
 }
-.mySlides {
-    display:none;
+.Quiz{
+    height:850px;
+width:100%;
+margin:0 auto;
+border:5px solid grey;
+border-radius: 10px;
 }
+.mySlides {
+height:450px;
+width:40%;
+margin:0 auto;
+float:left;
+margin:0 auto;
+border:5px solid grey;
+border-radius: 10px;
+position:relative;
+left:25%;
+}
+.mySlides1 {
+height:405px;
+width:40%;
+margin:0 auto;
+float:right;
+margin:0 auto;
+border:5px solid grey;
+border-radius: 10px;
+
+}
+
+
 #topSession {
     display: block;
     z-index: 99;
     height:850px;
-    background-color: purple;
+    background-color: grey;
 
 }
 header, nav, section, article, aside, footer, hgroup {
@@ -104,7 +137,7 @@ article span {
     background-repeat: no-repeat;
     font-weight: bold;
     padding:40px;
-    height:500px;
+    height:600px;
 }
 #cat p{
     padding:20px;
@@ -113,13 +146,13 @@ article span {
     color:black;
 }
 #quiz{
-    background-size: cover;
     background-repeat: no-repeat;
     font-weight: bold;
     padding:40px;
     height:450px;
     text-align: right;
     padding-right: 100px;
+    background-image: url("../image/girl.jpg");
 }
 #quizContent{
     position:absolute;
@@ -129,13 +162,14 @@ article span {
     font-size: 22px;
     color:black;
     font-style: italic;
+
 }
 #share{
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: bold;
-    padding:40px;
-    height: 250px;
+    padding:10px;
+    height: 415px;
 }
 .quiz-text article div {
     display: block;
@@ -144,16 +178,20 @@ article span {
     width: 100%;
 }
 .arrow-down {
-    right: 47%;
+    right: 48.5%;
     position: absolute;
     bottom: -1;
     top:80%;
     display: block;
-    height: 62px;
-    width: 69px;
-    background: url(../image/arrow-down.png);
-    background-repeat: no-repeat;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid grey;
 }
+
+
 
 a {
     color: #328AA1;
@@ -161,11 +199,11 @@ a {
 #middleSession{
 display: block;
     z-index: 99;
-    height:1690px;
+    height:1895px;
 }
 #about{
     height:250px;
-    background-color: lightgrey;
+    background-color: black;
 
 }
 em{
@@ -174,7 +212,6 @@ em{
 }
 .banner-guide {
     padding: 0;
-    position: relative;
     background-size: cover;
     background: #D0D0D0 ; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Safari 5.1 to 6.0 */
@@ -182,7 +219,8 @@ em{
     background: -moz-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Firefox 3.6 to 15 */
     background: linear-gradient( #B0B0B0 , #989898 ,  #404040); /* Standard syntax (must be last) */
      color:purple;
-     font-size:50px;
+     font-size:40px;
+     position:relative;
  }
   
 .animated{
@@ -274,7 +312,11 @@ body{
     height: 100px;
     z-index: 1;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    background-color: #00bad2;
+    background: #D0D0D0 ; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #B0B0B0 , #989898 ,  #404040); 
     color: #fff;
     font-size: 24px;
     display: block;
@@ -291,10 +333,14 @@ position:relative;
 
     float:left;
     width:50%;
-    height:200px;
+    height:250px;
     margin:0 auto;
     transition: all .2s ease-in-out; 
     border-radius: 10px
+}
+.cat p{
+    font-size:22px;
+    font-weight: bold;
 }
 .cat:hover{
 transform: scale(1.1);
@@ -310,7 +356,7 @@ transform: scale(1.1);
  background-image: url("../image/science.jpg")
 }
 #cat4{
-     background-image: url("../image/tech.jpg")
+     background-image: url("../image/technology.jpg")
 }
 #grid{
 	width:50%;
@@ -332,15 +378,28 @@ aside{
     height:200px;
     position:relative;
 text-align: center;
+padding-top: 20px;
+}
+#logForm{
+      margin-top: 20px;
+      background-color: lightgrey;
+      border:5px solid grey;
+      height: 750px;
+     width: 40%;
+     align-items: center;
+     position: relative;
+     left:30%;
 }
 form {
-  width: 50%;
+  
+  
   margin: 0 auto;
     padding: 20px;
     font-family: "RobotoDraft", sans-serif;
     color: #444;
     font-weight: 400;
-   align-items: center;
+   
+   
 }
 
 input {
@@ -495,22 +554,16 @@ display:inline-block; /* allows us to set width & height how we want */
 }
 /* End of Quiz Classes */
 .scrollToTop{
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 30px 30px 30px;
-border-color: transparent transparent lightgrey transparent;
-    color: white;
-    text-decoration: none;
+width: 30px;
+height: 30px;
 
   /*  background: url('arrow_up.png') no-repeat 0px 20px;*/
 }
-.scrollToTop:hover{
-    background-color: smokewhite;
-}
 #end{
-position:relative;
-left:48%;
+position:fixed;
+left:47%;
+bottom:10%;
+color:lightgrey;
 }
 .bottom{
     font-size: 24px;
@@ -521,16 +574,14 @@ left:48%;
     line-height: 1px;
 }
 .banner-guide li{
-width:300px;
-text-align: center;
- display: inline;
+   width:300px;
+   text-align: center;
+   display: inline;
     width:300px;
     height:200px;
     font-size: 24px;
     margin:0 auto;
-    position: relative;
-    left:39%;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 #facebook{
     background-color: #3B5998;
