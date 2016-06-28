@@ -50,18 +50,18 @@ border-radius: 10px;
 }
 .mySlides {
 height:450px;
-width:40%;
+width:30%;
 margin:0 auto;
 float:left;
 margin:0 auto;
 border:5px solid grey;
 border-radius: 10px;
 position:relative;
-left:25%;
+left:35%;
 }
 .mySlides1 {
 height:405px;
-width:40%;
+width:35%;
 margin:0 auto;
 float:right;
 margin:0 auto;
@@ -70,7 +70,7 @@ border-radius: 10px;
 
 }
 #share p{
-    font-size:18px;
+    font-size:22px;
     font-style: italic;
     color:black;
     padding-bottom: 200px;
@@ -155,7 +155,7 @@ article span {
     font-weight: bold;
     padding:40px;
     height:450px;
-    text-align: right;
+    text-align: left;
     padding-right: 100px;
     background-image: url("../image/girl.jpg");
 }
@@ -243,7 +243,7 @@ em{
     position:relative;
     font-size: 22px;
     box-shadow: 10px 10px 5px #888888;
-    left:40%;
+    left:38%;
      color:#00628B;
      font-weight: bold;
 
@@ -599,7 +599,8 @@ color:lightgrey;
     font-size: 24px;
     margin:0 auto;
     border-radius: 4px;
-}.facebook{
+}
+.facebook{
     background-color: #3B5998;
     color:white;
     text-decoration:none;
@@ -608,9 +609,6 @@ color:lightgrey;
      background-color: #4099FF;
     color:white;
 }
-
-
-
 @media (max-width: 1024px) {
   .arrow-down {
     top:60%;
