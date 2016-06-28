@@ -69,7 +69,12 @@ border:5px solid grey;
 border-radius: 10px;
 
 }
-
+#share p{
+    font-size:18px;
+    font-style: italic;
+    color:black;
+    padding-bottom: 200px;
+}
 
 #topSession {
     display: block;
@@ -157,11 +162,14 @@ article span {
 #quizContent{
     position:absolute;
     left:50%;
-    width:400px;
-    height:200px;
+    width:500px;
+    height:300px;
     font-size: 22px;
     color:black;
     font-style: italic;
+    border-radius: 50px 20px;
+    border:5px solid grey;
+    padding:10px;
 
 }
 #share{
@@ -203,7 +211,7 @@ display: block;
 }
 #about{
     height:250px;
-    background-color: black;
+      background: #D0D0D0
 
 }
 em{
@@ -218,7 +226,7 @@ em{
     background: -o-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Firefox 3.6 to 15 */
     background: linear-gradient( #B0B0B0 , #989898 ,  #404040); /* Standard syntax (must be last) */
-     color:purple;
+     color:#00628B;
      font-size:40px;
      position:relative;
  }
@@ -230,12 +238,15 @@ em{
     padding:20px;
     margin:0px auto;
     text-align: center;
-    background-color: purple;
+    background-color:#77A298;
     border-radius: 50%;
     position:relative;
     font-size: 22px;
     box-shadow: 10px 10px 5px #888888;
     left:40%;
+     color:#00628B;
+     font-weight: bold;
+
 
     
 }
@@ -306,17 +317,14 @@ button{
 
 }
 body{
-	background-color: #eee
+	background: #D0D0D0 ; /* For browsers that do not support gradients */
+   
 }
 .category-toolbar {
     height: 100px;
     z-index: 1;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    background: #D0D0D0 ; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient( #B0B0B0 , #989898 ,  #404040); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( #B0B0B0 , #989898 ,  #404040); 
+    background:black; 
     color: #fff;
     font-size: 24px;
     display: block;
@@ -325,7 +333,7 @@ body{
 }
 #category{
 	height:800px;
-background-color: purple;
+background-image: url("../image/Quiz.jpg");
 position:relative;
 
 }
@@ -382,8 +390,9 @@ padding-top: 20px;
 }
 #logForm{
       margin-top: 20px;
-      background-color: lightgrey;
+      background-color:#8BB6AC;
       border:5px solid grey;
+      border-radius: 10px;
       height: 750px;
      width: 40%;
      align-items: center;
@@ -408,14 +417,14 @@ input {
   display:block;
   outline:none;
   border-radius:5px;
-  border:3px solid #c6c9cc;
+  border:3px solid lightgrey;
   margin:5px 0px 15px 0px;
   padding:5px 8px;
   height:30px;
 }
 
 input:focus {
-  border:3px solid blue;
+  border:3px solid #00628B;
 }
 
 label {
@@ -461,7 +470,7 @@ p {
     box-shadow: 10px 10px 5px #888;
     position: relative;
     transition: width 2s;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .nextButton {
     box-shadow: 3px 3px 5px #888;
@@ -499,7 +508,7 @@ p {
 }
 .choiceList {
     font-family: Courier, serif;
-    color: blueviolet;
+      color: #00628B;
 }
 .result {
     width: 30%;
@@ -536,6 +545,11 @@ input[type=radio]:checked + label:before{
 }
 input[type=radio]{
   width:100px;
+  display:inline;
+}
+
+#radio input[type=radio]{
+  width:100px;
   display:none;
 }
 
@@ -544,13 +558,16 @@ input[type=radio] + label:before{
 display:inline-block; /* allows us to set width & height how we want */
   content:""; /* content we are adding to the DOM */
   text-align:center;
-  color:#00bf00;
- 
+  color:#00628B;
   width:20px;
   height:20px;
   background:#ccc;
   box-shadow: inset 0px 1px 3px rgba(0,0,0,.7);
   border-radius:20px;
+}
+input[type=checkbox] {
+  color:#00628B;
+
 }
 /* End of Quiz Classes */
 .scrollToTop{
@@ -582,13 +599,12 @@ color:lightgrey;
     font-size: 24px;
     margin:0 auto;
     border-radius: 4px;
-}
-#facebook{
+}.facebook{
     background-color: #3B5998;
     color:white;
     text-decoration:none;
 }
-#twitter{
+.twitter{
      background-color: #4099FF;
     color:white;
 }

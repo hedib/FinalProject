@@ -42,24 +42,24 @@ $('html, body').animate({ scrollTop:  $("#topSession").offset().top - -800 }, 's
 })
 
 var questions = [{
-    question: "What is the population of Brazil?",
-    choices: ["145 million", "199 million", "182 million", "205 million"],
-    correctAnswer: 1
-}, {
-    question: "What is 27*14?",
-    choices: ["485", "634", "408", "528"],
+    question: " What is part of a database that holds only one type of information?",
+    choices: ["Report", "Field", "Record", "File"],
     correctAnswer: 2
 }, {
-    question: "What is the busiest train station in the world?",
-    choices: ["Grand Central, NY", "Shibuya, Tokyo", "Beijing Central, Chine", "Gard du Nord, Paris"],
-    correctAnswer: 1
+    question: "OS computer abbreviation usually means ?",
+    choices: ["Order of Significance", "Open Software", "Operating System", "Optical Sensor"],
+    correctAnswer: 3
 }, {
-    question: "What is the longest river?",
-    choices: ["Nile", "Amazon", "Mississippi", "Yangtze"],
+    question: "What frequency range is the High Frequency band?",
+    choices: ["100 kHz", "1GHZ", "30 to 300 MHz", "3 to 30 MHz"],
     correctAnswer: 4
 }, {
-    question: "What is the busiest tube station in the London?",
-    choices: ["Waterloo", "Baker Street", "Kings Cross", "Victoria"],
+    question: "What does the term PLC stand for?",
+    choices: ["Programmable Lift Computer", "Program List Control", "Programmable Logic Controller", "Piezo Lamp Connector"],
+    correctAnswer: 3
+}, {
+    question: "'.BAT' extension refers usually to what kind of file?",
+    choices: ["Compressed Archive file", "System file", "Audio file", "Backup file"],
     correctAnswer: 3
 }];
 
@@ -176,6 +176,12 @@ $("#arrow").click(function(backToCategory){
 	alert("are you sure to back to categories list?");
 	window.location.href= 'categories.html';
 })
+
+$("#fb-root").click(function fbShare(url, title, descr, image, winWidth, winHeight) {
+        var winTop = (screen.height / 2) - (winHeight / 2);
+        var winLeft = (screen.width / 2) - (winWidth / 2);
+        window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+    });
 });
 
 
