@@ -162,7 +162,7 @@ article span {
 #quizContent{
     position:absolute;
     left:50%;
-    width:500px;
+    width:600px;
     height:300px;
     font-size: 22px;
     color:black;
@@ -186,7 +186,7 @@ article span {
     width: 100%;
 }
 .arrow-down {
-    right: 48.5%;
+    right: 49%;
     position: absolute;
     bottom: -1;
     top:80%;
@@ -207,10 +207,10 @@ a {
 #middleSession{
 display: block;
     z-index: 99;
-    height:1895px;
+    height:1945px;
 }
 #about{
-    height:250px;
+    height:300px;
       background: #D0D0D0
 
 }
@@ -607,4 +607,40 @@ color:lightgrey;
 .twitter{
      background-color: #4099FF;
     color:white;
+}
+
+
+
+@media (max-width: 1024px) {
+  .arrow-down {
+    top:60%;
+    left:49%;
+}
+article span {
+    top: 40%;
+    left: 35%;
+}
+.animated{
+    left:30%;
+}
+.mySlides{
+    width:50%;
+}
+#quizContent{
+    height:350px;
+    width:330px;
+    left:64%;
+    font-size:18px;
+    padding:5px;
+}
+ .banner-guid p{
+    font-size:18px;
+  }
+}
+
+@media (max-width: 480px) {
+
+ 
+
+  
 }

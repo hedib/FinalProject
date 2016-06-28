@@ -38,7 +38,7 @@ $(window).scroll(function(){
   	  $("#grid" ).load( "quiz.html" );
   }
 $(".arrow-down").click(function(){
-$('html, body').animate({ scrollTop:  $("#topSession").offset().top - -800 }, 'slow');
+$('html, body').animate({ scrollTop:  $("#topSession").offset().top - -860 }, 'slow');
 })
 
 var questions = [{
