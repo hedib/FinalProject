@@ -63,32 +63,6 @@ var questions = [{
     correctAnswer: 3
 }];
 
-
-// var questions = [{
-//     question: "Which of the following characterized English society in the sixteenth century?",
-//     choices: ["a stagnant economy", "a rapidly growing population", "declining per capita output and real household income", "205 million"],
-//     correctAnswer: 1
-// }, {
-//     question: "What is 27*14?",
-//     choices: ["485", "634", "408", "528"],
-//     correctAnswer: 2
-// }, {
-//     question: "What is the busiest train station in the world?",
-//     choices: ["Grand Central, NY", "Shibuya, Tokyo", "Beijing Central, Chine", "Gard du Nord, Paris"],
-//     correctAnswer: 1
-// }, {
-//     question: "What is the longest river?",
-//     choices: ["Nile", "Amazon", "Mississippi", "Yangtze"],
-//     correctAnswer: 4
-// }, {
-//     question: "What is the busiest tube station in the London?",
-//     choices: ["Waterloo", "Baker Street", "Kings Cross", "Victoria"],
-//     correctAnswer: 3
-// }];
-
-
-
-
 var currentQuestion = 0;
 var correctAnswers = 0;
 var quizOver = false;
